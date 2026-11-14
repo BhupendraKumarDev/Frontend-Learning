@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+}
+
+header{
+    background-color:rgb(184, 28, 28) ;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    line-height: 40px;
+}
+
+nav{
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;
+    color: white;
+}
+
+section{
+    background-color: rgb(255, 230, 230);
+    text-align: center;
+    padding: 60px;
+    line-height: 40px;
+}
+
+button{
+    background-color: rgb(184, 28, 28);
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+.main{
+    text-align: center;
+    justify-content: center;
+    
+    
+    
+}
+
+.card{
+    
+    height: 200px;
+    width: 200px;
+    box-shadow: 1px 1px 10px 2px black;
+    border-radius: 9px;
+    margin: auto;
+    display: grid;
+    grid-auto-rows: auto;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+    display: inline;
+    
+    
+    
+    
+}

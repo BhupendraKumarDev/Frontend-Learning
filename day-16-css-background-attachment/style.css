@@ -1,0 +1,49 @@
+
+/* Common CSS */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body > h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Background Attachment: Scroll */
+.scroll-bg {
+    background-attachment: scroll;
+}
+
+/* Background Attachment: Fixed */
+.fixed-bg {
+    background-attachment: fixed;
+}
+
+/* Content Section */
+.content {
+    padding: 50px;
+    background-color: #f2f2f2;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Background Attachment: Local */
+.local-bg {
+    height: 400px;
+    overflow-y: auto;
+    background-attachment: local;
+    background-repeat: repeat-y;
+    background-size: cover;
+}

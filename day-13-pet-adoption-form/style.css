@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf7f2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+
+.container {
+    width: 980px;
+    max-width: 100%;
+
+    display: flex;
+    background-color: white;
+
+    border-radius: 16px;
+    overflow: hidden;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Left Section */
+
+.left-section {
+    width: 40%;
+    background-color: #91613f;
+
+    padding: 30px;
+    text-align: center;
+
+    color: white;
+}
+
+.pet-image {
+    width: 100%;
+    height: 435px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.left-section h1 {
+    font-size: 32px;
+    margin-top: 28px;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.footer-text {
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+/* Right Section */
+
+.right-section {
+    width: 60%;
+    padding: 30px;
+}
+
+.right-section h2 {
+    text-align: center;
+    color: #75451f;
+
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+/* Form Fields */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 43px;
+
+    padding: 10px 12px;
+
+    font-size: 15px;
+
+    border: 1px solid #e7d9cc;
+    border-radius: 6px;
+
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #a8754d;
+    box-shadow: 0 0 4px rgba(168, 117, 77, 0.3);
+}
+
+.form-group input[readonly] {
+    background-color: #fafafa;
+}
+
+/* Submit Button */
+
+button {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 20px;
+
+    background-color: #a8754d;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #805331;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+
+    .pet-image {
+        height: 300px;
+    }
+
+    .left-section h1 {
+        font-size: 26px;
+    }
+
+    .right-section {
+        padding: 25px 20px;
+    }
+}

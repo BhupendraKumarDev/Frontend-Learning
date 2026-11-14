@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Attachment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Background Attachment</h1>
+
+    <section class="scroll-bg">
+        <h1>background-attachment: scroll</h1>
+    </section>
+
+    <div class="content">
+        <p>
+            The default value of background-attachment is scroll.
+            The background image moves together with the page whenever
+            the user scrolls.
+
+            Both the text and the background image scroll at the same speed.
+            The image always stays attached to the element itself.
+
+            This behaviour is commonly used for normal website sections
+            where no special scrolling effect is required.
+
+            Since this is the default behaviour, you usually don't need
+            to write background-attachment: scroll;
+            unless you want to make it explicit.
+        </p>
+    </div>
+
+    <section class="fixed-bg">
+        <h1>background-attachment: fixed</h1>
+    </section>
+
+    <div class="content">
+        <h1>background-attachment: local</h1>
+        <p>
+            The local value makes the background image scroll
+            along with the element's own scrollable content.
+        </p>
+    </div>
+
+    <section class="local-bg">
+        <h1>background-attachment: local</h1>
+    </section>
+
+</body>
+</html>

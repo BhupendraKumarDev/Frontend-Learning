@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    margin: 100px;
+    
+}
+.main{
+    background-color: rgb(79, 141, 247);
+    text-align: center;
+    color: black;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.Image{
+    background-color:rgb(144, 176, 232);
+    
+}
+
+form{
+   
+    background-color:rgb(144, 176, 232);
+    text-align: center;
+
+}
+
+img{
+    height: 100%;
+    width: 100%;
+   
+}
+label{
+    display: block;
+}
+
+input{
+    border-radius: 8px;
+}
+.container{
+    text-align: start;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.box{
+    width: 100%;
+   
+}
+.box input{
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    outline: none;
+    border: 2px solid black;
+}

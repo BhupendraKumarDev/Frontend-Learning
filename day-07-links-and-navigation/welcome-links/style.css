@@ -1,0 +1,13 @@
+div{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    font-size: large;
+    background-color: powderblue;
+}

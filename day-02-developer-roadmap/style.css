@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(31, 42, 56);
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+
+section{
+    display: inline;
+    height: 200px;
+    width: 350px;
+    border: 2px solid black;
+}
