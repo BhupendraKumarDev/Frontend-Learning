@@ -108,6 +108,14 @@ body {
     text-decoration: underline;
 }
 
+.form-options a:focus-visible,
+.signup-text a:focus-visible,
+button:focus-visible,
+.remember input:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
 /* Login Button */
 button {
     width: 100%;
@@ -125,6 +133,14 @@ button {
 button:hover {
     background-color: #1d4ed8;
     transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }
 
 /* Signup Text */
