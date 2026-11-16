@@ -9,7 +9,7 @@ header{
     text-align: center;
     color: white;
     padding: 30px;
-    width: 193vh;
+    width: 100%;
 }
 
 section{
@@ -20,12 +20,23 @@ section{
     line-height: 30px;
     border-radius: 20px;
     box-shadow: 0px 0px 3px rgb(183, 180, 180);
+    max-width: 900px;
+    margin-inline: auto;
 }
 
 img{
+    display: block;
     height: 280px;
-    width: 280px;
+    width: min(100%, 280px);
+    object-fit: cover;
     border-radius: 20px;
+}
+
+@media (max-width: 600px){
+    header{ padding: 24px 16px; }
+    section{ margin: 16px; padding: 20px; }
+    img{ height: auto; aspect-ratio: 1; }
+    footer{ padding: 20px 12px; line-height: 1.7; }
 }
 
 footer{
