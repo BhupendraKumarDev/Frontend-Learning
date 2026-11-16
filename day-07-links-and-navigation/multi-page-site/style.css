@@ -1,4 +1,16 @@
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+}
+nav{ display: flex; gap: 16px; margin: 16px 0; }
+nav a[aria-current="page"]{ font-weight: bold; }
+main{ max-width: 65ch; }
 img{
+    display: block;
+    max-width: 100%;
     height: 300px;
     width: 400px;
     border-radius: 40px;
