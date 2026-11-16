@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Space Camp Explorer Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,26 +13,27 @@
         <p>Reach Beyond the Stars • Train Like an Astronaut</p>
     </section>
     <section class="Image">
-        <img src="https://space-camp-form-03.vercel.app/images/astronot.jpg" alt="">
+        <img src="https://space-camp-form-03.vercel.app/images/astronot.jpg" alt="Astronaut preparing for a space mission">
     </section>
     <form>
          <h3>Explorer Registration Form</h3>
   <div class="container">
      <div class="box">
-     <label for="Name">name</label>
-    <input type="text" name="Name" id="Name" placeholder="Enter Explore Name">
+     <label for="name">Explorer name</label>
+    <input type="text" name="Name" id="name" placeholder="Enter Explorer Name" autocomplete="name" required>
    </div>
    <div class="box">
-     <label for="Password">Password</label>
-    <input type="password" placeholder="Create Password" name="Password" id="password">
+     <label for="password">Password</label>
+    <input type="password" placeholder="Create Password" name="Password" id="password" autocomplete="new-password" required>
    </div>
   </div>
     <label for="age">Age</label>
-    <input type="number" value="18">
-    <label for="fitness ">Fitness Score</label>
-    <input type="range" value="50">
-    <label for="Camp Date">Camp Date</label>
-    <input type="date" id="Camp Date" name="Camp Date">
+    <input type="number" id="age" name="age" min="10" max="99" value="18" required>
+    <label for="fitness">Fitness Score</label>
+    <input type="range" id="fitness" name="fitness" min="0" max="100" value="50">
+    <label for="camp-date">Camp Date</label>
+    <input type="date" id="camp-date" name="camp-date" required>
+    <button type="submit">Register for camp</button>
         
     </form>
 </body>
