@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,33 +8,112 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1 class="h1-header">🎧 TuneBox</h1>
-        <ul>
-            <a href="">Home</a>
-            <a href="">Discover</a>
-            <a href="">My Playlist</a>
-        </ul>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">My Playlist</a>
+        </nav>
     </header>
 
+    <!-- Search Bar -->
     <input type="text" placeholder="Search your favourite songs...">
 
-    <section>
-        <h2 class="section-h1">🎵 Music for Your Mood</h2>
+    <!-- Featured Section -->
+    <section class="featured">
+        <h2>🎵 Music for Your Mood</h2>
+
         <p>Discover your next favourite song.</p>
-        <button> &#9654 Play Featured</button>
+
+        <button>▶ Play Featured</button>
     </section>
-    <h2 class="playlist-h1">Your Playlist</h1>
-    <section class="Playlist">
+
+    <!-- Playlist Heading -->
+    <h2 class="playlist-h1">Your Playlist</h2>
+
+    <!-- Playlist Cards -->
+    <section class="playlist">
+
         <div class="song-card">
-            🎸
-            <div class="song-info"></div>
+            <span class="song-icon">🎸</span>
+
+            <div class="song-info">
+                <h3>Perfect</h3>
+                <p>Ed Sheeran · Romantic</p>
+            </div>
+
+            <button class="play-btn">▶</button>
         </div>
-        <div class="song-card"></div>
-        <div class="song-card"></div>
-        <div class="song-card"></div>
-        <div class="song-card"></div>
-        <div class="song-card"></div>
+
+        <div class="song-card">
+            <span class="song-icon">⚡</span>
+
+            <div class="song-info">
+                <h3>Believer</h3>
+                <p>Imagine Dragons · Rock</p>
+            </div>
+
+            <button class="play-btn">▶</button>
+        </div>
+
+        <div class="song-card">
+            <span class="song-icon">🌌</span>
+
+            <div class="song-info">
+                <h3>Faded</h3>
+                <p>Alan Walker · Electronic</p>
+            </div>
+
+            <button class="play-btn">▶</button>
+        </div>
+
+        <div class="song-card">
+            <span class="song-icon">🌿</span>
+
+            <div class="song-info">
+                <h3>Shape of You</h3>
+                <p>Ed Sheeran · Pop</p>
+            </div>
+
+            <button class="play-btn">▶</button>
+        </div>
+
+        <div class="song-card">
+            <span class="song-icon">🔥</span>
+
+            <div class="song-info">
+                <h3>On My Way</h3>
+                <p>Alan Walker · Dance</p>
+            </div>
+
+            <button class="play-btn">▶</button>
+        </div>
+
+        <div class="song-card">
+            <span class="song-icon">🌙</span>
+
+            <div class="song-info">
+                <h3>Night Changes</h3>
+                <p>One Direction · Pop</p>
+            </div>
+
+            <button class="play-btn">▶</button>
+        </div>
+
     </section>
+
+    <!-- Music Player -->
+    <section class="music-player">
+
+        <p>♫ Now Playing: Select your favourite song</p>
+
+        <button>▶ Play Music</button>
+
+    </section>
+
 </body>
 </html>

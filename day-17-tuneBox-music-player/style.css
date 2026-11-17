@@ -1,76 +1,223 @@
-*{
+
+/* Universal Selector */
+* {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
-body{
-    background-color: black;
+/* Body */
+body {
+    background-color: #0f0e19;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
-header{
-    background-color: rgb(27, 27, 46);
-    margin: 20px;
-    padding: 25px;
-    border-radius: 15px;
+/* Header */
+header {
+    background-color: #1b1b2e;
+    margin: 22px;
+    padding: 22px;
+    border-radius: 13px;
 }
 
-.h1-header{
-    color: rgb(189, 145, 255);
+.h1-header {
+    color: #bd91ff;
+    font-size: 28px;
+    margin-bottom: 12px;
 }
 
-a{
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+a {
     text-decoration: none;
-    color: rgb(202, 202, 217);
-    padding: 20px 20px 20px 0;
-    line-height: 40px;
+    color: #cacad9;
+    font-size: 14px;
 }
 
-a:hover{
-    color: rgb(189, 145, 255);
+a:hover {
+    color: #bd91ff;
 }
 
-input{
-    margin: 20px;
-    width: 86%;
-    border-radius: 15px;
-    
-    padding: 20px;
-    background-color: rgb(27, 27, 46);
-    border: none;
-    border: 3px solid rgb(56, 56, 79);
-}
-
-.section-h1{
+/* Search Bar */
+input {
+    margin: 0 22px;
+    width: calc(100% - 44px);
+    padding: 13px;
+    border-radius: 7px;
+    background-color: #1b1b2e;
+    border: 2px solid #38384f;
+    outline: none;
     color: white;
+    font-size: 13px;
 }
 
-p{
-    color: rgb(200, 197, 219);
+input:focus {
+    border-color: #9c6eff;
 }
 
-section{
-    background-color:  rgb(27, 27, 46);
-    margin: 25px;
+/* Featured Section */
+.featured {
+    background-color: #26213e;
+    margin: 22px;
     padding: 25px;
-    line-height: 40px;
-    border-radius: 15px;
+    border-radius: 13px;
+    box-shadow: 0 0 20px rgba(156, 110, 255, 0.12);
 }
 
-button{
-    padding: 10px;
-    border-radius: 20px;
-    background-color: rgb(156, 110, 255);
+.featured h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.featured p {
+    color: #cac5db;
+    font-size: 14px;
+    margin-bottom: 17px;
+}
+
+/* Buttons */
+button {
+    background-color: #9c6eff;
     color: white;
     border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-button:hover{
-    color: blueviolet;
+button:hover {
     background-color: white;
+    color: #9c6eff;
 }
 
-.playlist-h1{
-    color: white;
-    margin: 25px;
+.featured button {
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+/* Playlist Heading */
+.playlist-h1 {
+    font-size: 20px;
+    margin: 25px 22px 32px;
+}
+
+/* Playlist Grid */
+.playlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+    margin: 0 38px;
+    padding: 0;
+    background: transparent;
+}
+
+/* Song Cards */
+.song-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #1b1b2e;
+    border: 1px solid #34334c;
+    border-radius: 11px;
+    padding: 18px 25px;
+    min-width: 0;
+    transition: 0.3s;
+}
+
+.song-card:hover {
+    border-color: #9c6eff;
+    background-color: #26213e;
+}
+
+/* Song Icon */
+.song-icon {
+    font-size: 22px;
+    min-width: 32px;
+    text-align: center;
+}
+
+/* Song Information */
+.song-info {
+    flex: 1;
+}
+
+.song-info h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.song-info p {
+    font-size: 12px;
+    color: #b7b5d1;
+}
+
+/* Play Button */
+.play-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+/* Bottom Music Player */
+.music-player {
+    background-color: #26213e;
+    margin: 42px 22px 22px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.music-player p {
+    color: #cac5db;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.music-player button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    header {
+        margin: 15px;
+    }
+
+    input {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+    }
+
+    .featured {
+        margin: 15px;
+    }
+
+    .playlist-h1 {
+        margin: 25px 15px;
+    }
+
+    .playlist {
+        grid-template-columns: 1fr;
+        margin: 0 15px;
+    }
+
+    .song-card {
+        padding: 18px;
+        gap: 15px;
+    }
+
+    .music-player {
+        margin: 30px 15px;
+    }
 }
