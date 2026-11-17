@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: rgb(27, 27, 46);
+    margin: 20px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.h1-header{
+    color: rgb(189, 145, 255);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(202, 202, 217);
+    padding: 20px 20px 20px 0;
+    line-height: 40px;
+}
+
+a:hover{
+    color: rgb(189, 145, 255);
+}
+
+input{
+    margin: 20px;
+    width: 86%;
+    border-radius: 15px;
+    
+    padding: 20px;
+    background-color: rgb(27, 27, 46);
+    border: none;
+    border: 3px solid rgb(56, 56, 79);
+}
+
+.section-h1{
+    color: white;
+}
+
+p{
+    color: rgb(200, 197, 219);
+}
+
+section{
+    background-color:  rgb(27, 27, 46);
+    margin: 25px;
+    padding: 25px;
+    line-height: 40px;
+    border-radius: 15px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(156, 110, 255);
+    color: white;
+    border: none;
+}
+
+button:hover{
+    color: blueviolet;
+    background-color: white;
+}
+
+.playlist-h1{
+    color: white;
+    margin: 25px;
+}
